@@ -1,0 +1,37 @@
+		
+	*{
+			box-sizing: border-box;
+			margin: 0px;
+		}
+
+		html,body{height:100%;}
+
+		#header {
+			height: 10%;
+			border-style: solid;
+		}
+
+		#mainSection {
+			height:60%;
+			
+		}
+
+		#leftSide {
+			float:left;
+			height:100%;
+			width: 70%;
+			border-style: solid;
+		}
+
+		#rightSide {
+			float:left;
+			width: 30%;
+			height:100%;
+			border-style: solid;
+		}
+
+		#bottom {
+			height:40%;
+			border-style: solid;
+		}
+		.clear{clear:both;}	
