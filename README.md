@@ -1,10 +1,12 @@
-# Exercise 2, Hose Project
+# Exercise 2, Tirgul 3
 
-This project contains the solution for Exercise 2. The goal of the assignment is to practice basic HTML and CSS concepts and demonstrate the ability to build a simple webpage.
+This project contains the solution for Exercise 2 from Tirgul 3.  
+The goal of the exercise is to practice basic HTML and CSS skills and build a simple working webpage.
 
 ## Project Description
 
-The project includes a small example called “doing 123”. It shows how to structure HTML files, apply basic styling and prepare the work for GitHub Pages deployment.
+The project demonstrates simple structure, layout and styling through a small example called “doing 123”.  
+It is part of a series of practice tasks aimed at improving web development understanding.
 
 ## Files Included
 
@@ -14,16 +16,16 @@ The project includes a small example called “doing 123”. It shows how to str
 
 ## How to View the Project
 
-You can view the project live using GitHub Pages:
+You can open the project directly in your browser or view it using GitHub Pages:
 
 https://yogevshani.github.io/tirgul3/ex3solpart3.html
 
 ## How to Use
 
-1. Open the HTML files in any browser
-2. Review the structure and styling
-3. Use this project as a reference for your next assignments
+1. Download or clone the repository  
+2. Open the HTML files in any modern browser  
+3. Review the code and use it as reference for learning
 
 ## Notes
 
-This is a learning project and was created as part of practicing web development skills.
+This project was created for learning purposes as part of Tirgul 3.
