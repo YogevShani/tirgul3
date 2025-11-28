@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חלוקה עם float – רווחים אנכיים</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    .left-panel {
+      float: left;
+      width: 20%;
+      height: 100vh;
+      background-color: white;
+      border: 4px solid red;
+      margin-right: 10px;
+    }
+
+    .right-wrapper {
+      float: left;
+      width: calc(80% - 10px);
+      height: 100vh;
+      padding: 10px;
+      border: 4px solid red;
+      background-color: white;
+    }
+
+    /* נגדיר שכל שורה תתפוס כ-31% גובה (מתוך 100%) ונשאיר רווח של 1% בין כל שורה */
+    .row {
+      width: 100%;
+      clear: both;
+      margin-bottom: 1%;
+    }
+
+    .row:last-child {
+      margin-bottom: 0;
+    }
+
+    .row-1 .box {
+      float: left;
+      width: 23.5%;
+      margin-right: 2%;
+      height: 98%;
+      background-color: white;
+      border: 4px solid red;
+    }
+
+    .row-1 .box:last-child {
+      margin-right: 0;
+    }
+
+    .row-2-left,
+    .row-2-right {
+      float: left;
+      height: 98%;
+    }
+
+    .row-2-left {
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    .row-2-left .box {
+      width: 100%;
+      height: calc(50% - 5px);
+      margin-bottom: 10px;
+      background-color: white;
+      border: 4px solid red;
+    }
+
+    .row-2-left .box:last-child {
+      margin-bottom: 0;
+    }
+
+    .row-2-right {
+      width: 48%;
+      background-color: white;
+      border: 4px solid red;
+    }
+
+    .row-3 .wide,
+    .row-3 .narrow {
+      float: left;
+      height: 98%;
+      background-color: white;
+      border: 4px solid red;
+    }
+
+    .row-3 .wide {
+      width: 66%;
+      margin-right: 4%;
+    }
+
+    .row-3 .narrow {
+      width: 30%;
+    }
+
+    /* גובה כל שורה מחושב כך ש-3 שורות + 2 רווחים של 1% = 100% */
+    .row-1,
+    .row-2,
+    .row-3 {
+      height: 32.66%; /* 100% - 2% מרווחים אנכיים / 3 */
+    }
+
+    @media (max-width: 750px) {
+      .left-panel,
+      .right-wrapper {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+      }
+
+      .row-1 .box,
+      .row-2-left,
+      .row-2-right,
+      .row-3 .wide,
+      .row-3 .narrow {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+        height: 100px;
+      }
+
+      .row-2-left .box {
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-panel"></div>
+
+  <div class="right-wrapper">
+
+    <!-- שורה 1 -->
+    <div class="row row-1">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- שורה 2 -->
+    <div class="row row-2">
+      <div class="row-2-left">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row-2-right"></div>
+    </div>
+
+    <!-- שורה 3 -->
+    <div class="row row-3">
+      <div class="wide"></div>
+      <div class="narrow"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
